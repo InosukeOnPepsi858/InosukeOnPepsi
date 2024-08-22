@@ -1,0 +1,45 @@
+// Simulated Prodigy game script that ultimately crashes the page and shows an alert
+function initializeProdigyGame() {
+    console.log('Starting Prodigy game setup...');
+    
+    // Simulate loading game assets
+    setTimeout(() => {
+        console.log('Loading Prodigy assets...');
+        setTimeout(() => {
+            console.log('Configuring game environment...');
+            setTimeout(() => {
+                console.log('Syncing player data...');
+                setTimeout(() => {
+                    console.log('Applying game updates...');
+                    setTimeout(() => {
+                        console.log('Launching Prodigy game...');
+                        showAlertWithTime();
+                        startGameSimulation();
+                    }, 2000); // Simulate 2 seconds of applying updates
+                }, 1500); // Simulate 1.5 seconds of syncing player data
+            }, 1000); // Simulate 1 second of configuring environment
+        }, 1500); // Simulate 1.5 seconds of loading assets
+    }, 1000); // Simulate 1 second of initialization
+}
+
+function showAlertWithTime() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    alert(`BANNED CHEATING ${timeString}`);
+}
+
+function startGameSimulation() {
+    console.log('Prodigy game is now running!');
+    
+    // Simulated game simulation
+    setTimeout(() => {
+        console.log('Running game simulation...');
+        // Infinite loop to crash the page
+        while (true) {
+            // Consuming resources
+        }
+    }, 500); // Simulate 0.5 seconds of game simulation before crashing
+}
+
+// Execute the initialization
+initializeProdigyGame();
